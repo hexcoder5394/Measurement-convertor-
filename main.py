@@ -17,7 +17,7 @@ def temp ():
     else:
         print("Invalid input")
 
-def len ():
+def length ():
     
     print("1. cm to mm")
     print("2. mm to cm")
@@ -97,7 +97,7 @@ print("3. Mass")
 select = int(input("Select: "))
 
 if (select == 1):
-    len()
+    length()
 elif (select == 2):
     temp()
 elif (select == 3):
