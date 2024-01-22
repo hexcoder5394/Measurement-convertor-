@@ -93,6 +93,7 @@ def mass():
 print("1. Length")
 print("2. Temperature")
 print("3. Mass")
+print ("4. Exit")
 
 select = int(input("Select: "))
 
@@ -102,5 +103,7 @@ elif (select == 2):
     temp()
 elif (select == 3):
     mass()
+elif (select == 4):
+    exit()
 else:
     print("Invalid input")
