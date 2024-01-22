@@ -28,12 +28,15 @@ def _sort_():
 
     print("1. Acsending Order")
     print("2. Decsending Order")
+    print("3. Exit")
 
     x = int(input("Select: "))
     if (x == 1):
         sort_acs(num_l)
     elif (x == 2):
         sort_decs(num_l)
+    elif (x == 3):
+        exit()
     else:
         print("Invalid Input")
     
