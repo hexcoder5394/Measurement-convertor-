@@ -88,12 +88,30 @@ def mass():
         t = (l*1000)
         print(t,"Kg")
     else:
-        print("Invalid input ")        
+        print("Invalid input ")
+
+def capacity ():
+    print("1. L to ml")
+    print("2. ml to L")
+
+    x = int(input("Selct: "))
+    # l to ml
+    if (x == 1):
+        l = float(input("Capacity: "))
+        ml = l*1000
+        print(ml, "ml")
+    elif (x == 2):
+        ml = float(input("Capacity: "))
+        l = ml/1000
+        print(l, "L")
+    else:
+        print("Invalid Input")
        
 print("1. Length")
 print("2. Temperature")
 print("3. Mass")
-print ("4. Exit")
+print("4. Capacity")
+print("5. Exit")
 
 select = int(input("Select: "))
 
@@ -104,6 +122,8 @@ elif (select == 2):
 elif (select == 3):
     mass()
 elif (select == 4):
+    capacity()
+elif (select == 5):
     exit()
 else:
     print("Invalid input")
